@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#a9822f" />
+  <title>Program &middot; In Loving Memory of Latoya Boose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="program.css" />
+</head>
+<body class="program-page">
+  <header class="prog-bar">
+    <a class="prog-bar__back" href="index.html#program">&lsaquo; Memorial</a>
+    <span class="prog-bar__title">Celebrating the Life of Latoya Boose</span>
+    <a class="prog-bar__dl" href="assets/program.pdf" download>Download PDF</a>
+  </header>
+
+  <main class="prog-stage">
+    <div class="flipbook-shell">
+      <div class="flipbook" id="flipbook"></div>
+    </div>
+  </main>
+
+  <nav class="flipbook__controls" aria-label="Program navigation">
+    <button class="fb-btn" id="fbPrev" type="button" aria-label="Previous page">&#8249;</button>
+    <span class="fb-page" id="fbPage" aria-live="polite"></span>
+    <button class="fb-btn" id="fbNext" type="button" aria-label="Next page">&#8250;</button>
+  </nav>
+
+  <script src="assets/vendor/page-flip.bundle.js"></script>
+  <script src="program.js"></script>
+</body>
+</html>
